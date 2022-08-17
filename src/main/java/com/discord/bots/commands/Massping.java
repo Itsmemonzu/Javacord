@@ -13,6 +13,9 @@ public class Massping implements MessageCreateListener {
 
         if(message.getMessageContent().equalsIgnoreCase(Main.Prefix + "massping")){
 
+
+            message.getChannel().sendMessage("Mass pining starting...");
+
             while(num < 1000){
                 message.getChannel().sendMessage("@everyone");
                 num++;
