@@ -14,6 +14,7 @@ public class Main {
         DiscordApi Bot = new DiscordApiBuilder().setToken(System.getenv().get("TOKEN")).login().join();
 
         Bot.addListener(new Ping());
+        Bot.addListener(new Massping());
 
         System.out.println("Bot is online!");
 
