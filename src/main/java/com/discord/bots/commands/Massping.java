@@ -11,7 +11,7 @@ public class Massping implements MessageCreateListener {
     @Override
     public void onMessageCreate(MessageCreateEvent message) {
 
-        if(message.getMessageContent().equalsIgnoreCase(Main.Prefix + "ping")){
+        if(message.getMessageContent().equalsIgnoreCase(Main.Prefix + "massping")){
 
             while(num < 1000){
                 message.getChannel().sendMessage("@everyone");
