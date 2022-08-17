@@ -15,6 +15,7 @@ public class Massping implements MessageCreateListener {
 
             while(num < 1000){
                 message.getChannel().sendMessage("@everyone");
+                num++;
             }
 
 
